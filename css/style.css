@@ -8,7 +8,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .jx-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
 .jx-button:disabled{cursor:not-allowed;opacity:0.3}
 .jx-input{padding:8px;display:block;border:none;border:1px solid #ccc;width:100%}
-.jx-text{padding:8px;display:block;border:none;border:1px solid #ccc;width:100% ; height:150px}
+.jx-text{width: 102%;height: 150px;border: 1px solid #ccc;resize: none}
 .jx-button:first-child, .jx-button:first-child{background-color:#ccc;color:#000}
 .jx-container:after,.jx-container:before,.jx-row:after,.jx-row:before{content:"";display:table;clear:both}
 .jx-half,.jx-third,.jx-twothird,.jx-threequarter,.jx-quarter{float:left;width:100%}
