@@ -1,32 +1,30 @@
 html,body{font-family: " Trebuchet MS", Arial, sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
-h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
+h1,h2,h3,h4,h5,h6{font-family:"Trebuchet MS",Arial,sans-serif;font-weight:400;margin:0 20px 0}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
-.jx-row img {margin-bottom: -22px}
-.jx-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+a{text-decoration: none}
+p{padding: 0px 30px 30px 30px; text-align:justify!important}
+.jx-row  {line-height: 0;cursor:pointer}
+.jx-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}a:hover{cursor:pointer}
 .jx-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 .jx-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
 .jx-button:disabled{cursor:not-allowed;opacity:0.3}
-.jx-input{padding:8px;display:block;border:none;border:1px solid #ccc;width:100%}
-.jx-text{width: 102%;height: 150px;border: 1px solid #ccc;resize: none}
 .jx-button:first-child, .jx-button:first-child{background-color:#ccc;color:#000}
 .jx-container:after,.jx-container:before,.jx-row:after,.jx-row:before{content:"";display:table;clear:both}
 .jx-half,.jx-third,.jx-twothird,.jx-threequarter,.jx-quarter{float:left;width:100%}
 .jx-container{padding:0.01em 16px ; top: 0; position: fixed}
 .jx-center{text-align:center!important}
-.jx-center p{text-align:justify!important}
-.jx-section{margin-top:16px!important;margin-bottom:16px!important}
+.jx-section{font-style: normal;margin:auto;width:60%; margin-top:16px!important;margin-bottom:16px!important}
 .jx-padding{padding:8px 16px!important}
 .jx-padding-32{padding-top:32px!important;padding-bottom:32px!important}
 .jx-padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .jx-left{float:left!important}.jx-right{float:right!important}
 .jx-button:hover{color:#000!important;background-color:#ccc!important}
-.jx-info{position:relative; bottom:40px; left:30px;display:inline-block ;padding:0px 10px 0px 10px;background-color:#fff!important}
 /* Responsive */
 @media (min-width:601px){.jx-quarter{width:24.99999%}.jx-third{width:33.33333%}
 .jx-half{width:49.99999%}.jx-center p{padding:0px 10% 0px 10%!important}}
-@media (min-width:993px){.jx-content{max-width:980px}.jx-center p{padding:0px 20% 0px 20%!important}}
-@media (max-width:600px){.jx-button{width:100%}}
+@media (min-width:993px){.jx-content{max-width:980px}.jx-center p{padding:0px 20% 0px 20%!important}.pop-modal-content{width:900px}}
+@media (max-width:600px){.jx-button{width:100%}.pop-modal-content{margin:0 10px;width:auto!important}.pop-modal{padding-top:30px}.pop-modal-content{width:500px}}
 /* Colors */
 .jx-white,.jx-hover-white:hover{color:#000!important;background-color:#fff!important}
 .jx-black,.jx-hover-black:hover{color:#fff!important;background-color:#000!important}
@@ -34,3 +32,19 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .jx-light-grey,.jx-hover-light-grey:hover,.jx-light-gray,.jx-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
 .jx-dark-grey,.jx-hover-dark-grey:hover,.jx-dark-gray,.jx-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
 .jx-pale-red,.jx-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+/* Icons */
+.icon{font-size:32px}
+.email:after{content: "peterjakubik.info\0040gmail.com"; }
+/* Pop up */
+.pop-display-topright{position:absolute;right:0;top:0}
+.pop-modal{z-index:3;display:none;padding-top:10px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.pop-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:65%}.pop-modal-content img{width:100%}
+.pop-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.pop-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.pop-button:disabled{cursor:not-allowed;opacity:0.3}
+.pop-button:first-child,.pop-button:first-child{background-color:#fff;color:#000}
+.pop-button{white-space:normal}
+.pop-button:hover{color:#000!important;background-color:#ccc!important}
+.pop-large{font-size:25px!important}
+.pop-container:after,.pop-container:before,.pop-container,{padding:0.01em 16px}
+.pop-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
